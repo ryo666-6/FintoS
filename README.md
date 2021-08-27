@@ -1,2 +1,2 @@
-# meditation-app
-Meditation app tutorial
+# FintoS
+This stands for 'Falling into Something'.
