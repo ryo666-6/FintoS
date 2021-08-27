@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FintoS</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="vid-container">
+        <video loop>
+          <source
+            src="video/[Slow Motion] Rain Stock Footage _ No Copyright Video _ Royalty Free.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="music-point">
+        <p class="nowMusic"></p>
+      </div>
+
+      <div class="time-select">
+        <button data-time="300">5 Minutes</button>
+        <button data-time="600">10 Minutes</button>
+        <button data-time="900">15 MInutes</button>
+      </div>
+      <div class="player-container">
+        <audio class="song">
+          <source src="sounds/rain.mp3" />
+        </audio>
+        <img src="./svg/play.svg" alt="play" class="play" />
+        <svg
+          class="truck-outline"
+          width="453"
+          height="453"
+          viewBox="0 0 453 453"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="226.5"
+            cy="226.5"
+            r="216.5"
+            stroke="white"
+            stroke-width="20"
+          />
+        </svg>
+        <svg
+          class="moving-outline"
+          width="453"
+          height="453"
+          viewBox="0 0 453 453"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="226.5"
+            cy="226.5"
+            r="216.5"
+            stroke="#018EBA"
+            stroke-width="20"
+          />
+        </svg>
+        <h3 class="time-display">0:00</h3>
+      </div>
+      <div class="sound-picker">
+        <button
+          data-sound="./sounds/rain.mp3"
+          data-video="./video/[Slow Motion] Rain Stock Footage _ No Copyright Video _ Royalty Free.mp4"
+          class="rain"
+        >
+          <img src="./svg/お天気　雨のフリーアイコン (1).svg" alt="rain" />
+        </button>
+        <button
+          data-sound="./sounds/beach.mp3"
+          data-video="./video/No Copyright Background Video Nature Sunset Beach (No Sound, No Music)   Free St.mp4"
+          class="beach"
+        >
+          <img src="./svg/サーフィンアイコン5.svg" alt="beach" />
+        </button>
+        <button
+          data-sound="./sounds/y2mate.com - Sauna steam  Sound Effect SFX.mp3"
+          data-video="./video/Smoke or Vapor In the Air Free Stock Footage No copyright Free to use.mp4"
+          class="sauna"
+        >
+          <img src="./svg/天気のフリー素材9.svg" alt="sauna" />
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
